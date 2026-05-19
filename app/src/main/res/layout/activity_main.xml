@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dashboard Absensi"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tvLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mendeteksi Lokasi..."
+                    android:textColor="#D32F2F"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Kehadiran"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/etMatkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Matakuliah"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <RadioButton android:id="@+id/rbHadir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hadir" android:checked="true"/>
+            <RadioButton android:id="@+id/rbIzin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Izin" android:layout_marginStart="10dp"/>
+            <RadioButton android:id="@+id/rbSakit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sakit" android:layout_marginStart="10dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bukti Foto Selfie (Wajib)"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:id="@+id/ivSelfie"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#E0E0E0"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="10dp"
+            android:src="@android:drawable/ic_menu_camera"/>
+
+        <Button
+            android:id="@+id/btnAmbilFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AMBIL FOTO SELFIE"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnAbsen"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="KIRIM ABSENSI"
+            android:backgroundTint="#3F51B5"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnRiwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LIHAT RIWAYAT"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+    </LinearLayout>
+</ScrollView>

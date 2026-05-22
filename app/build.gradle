@@ -29,6 +29,13 @@ android {
         viewBinding = true
     }
 
+    // SOLUSI UNTUK: Android 16 KB Alignment (Menghilangkan Warning saat Run)
+    packaging {
+        jniLibs {
+            useLegacyPackaging = false
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
@@ -64,6 +71,13 @@ dependencies {
 
     // Glide: Untuk memproses dan menampilkan foto dengan sangat cepat
     implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    // Google ML Kit: Jantung dari Autentikasi Wajah & Teks (OCR)
+    implementation 'com.google.mlkit:face-detection:16.1.6'
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.1'
+
+    // WorkManager: Untuk background task (Poin Inovasi)
+    implementation "androidx.work:work-runtime-ktx:2.9.0"
 
     // Testing
     testImplementation libs.junit

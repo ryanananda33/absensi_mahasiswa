@@ -1,4 +1,6 @@
-package com.pab.absensi_mahasiswa
+package com.pab.absensi_mahasiswa.model
+
+import com.pab.absensi_mahasiswa.model.User
 
 data class LoginResponse(
     val status: String,

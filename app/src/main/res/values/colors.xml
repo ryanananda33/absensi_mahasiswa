@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Master Palette: Deep Navy Enterprise -->
+    <color name="primary">#0A2647</color>
+    <color name="primary_variant">#144272</color>
+    <color name="secondary">#205295</color>
+    <color name="accent">#2C74B3</color>
+
+    <color name="background">#F8F9FA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#E63946</color>
+
+    <color name="black">#1A1C1E</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#E9ECEF</color>
+    <color name="gray_dark">#6C757D</color>
+    <color name="green_success">#2D6A4F</color>
+
+    <!-- Transparent Accents -->
+    <color name="primary_alpha_10">#1A0A2647</color>
+    <color name="white_alpha_20">#33FFFFFF</color>
 </resources>

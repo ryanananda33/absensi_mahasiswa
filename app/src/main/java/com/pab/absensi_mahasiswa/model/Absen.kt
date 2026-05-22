@@ -1,10 +1,10 @@
-package com.pab.absensi_mahasiswa
+package com.pab.absensi_mahasiswa.model
 
 data class Absen(
     val id: Int,
     val nama: String,
     val matakuliah: String,
     val keterangan: String,
-    val foto: String?, // MASTER LEVEL: Wajib ada untuk menampilkan bukti selfie
+    val foto: String?,
     val waktu_absen: String
 )

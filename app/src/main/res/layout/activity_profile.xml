@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarProfile"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="Profil Mahasiswa"
+            app:titleTextColor="@color/white"
+            app:navigationIcon="@android:drawable/ic_menu_revert" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal">
+
+            <!-- AVATAR LARGE -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivProfileLarge"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@android:drawable/ic_menu_myplaces"
+                android:padding="4dp"
+                app:strokeWidth="3dp"
+                app:strokeColor="@color/primary"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvProfileNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Muhamad Nabil"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvProfileNim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20240810002"
+                android:textColor="@color/gray_dark"
+                android:layout_marginBottom="32dp" />
+
+            <!-- DATA DETAIL SECTION -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="@color/gray_light">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Gender Row -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray_dark" />
+                    <TextView
+                        android:id="@+id/tvValGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laki-laki"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- TTL Row -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tempat, Tanggal Lahir"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray_dark" />
+                    <TextView
+                        android:id="@+id/tvValTtl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kuningan, 2003-10-03"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Prodi Row -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Program Studi"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray_dark" />
+                    <TextView
+                        android:id="@+id/tvValProdi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teknik Informatika"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="16dp" />
+
+                    <!-- Kelas Row -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas / Semester"
+                        android:textSize="11sp"
+                        android:textColor="@color/gray_dark" />
+                    <TextView
+                        android:id="@+id/tvValKelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TINFC-2024-02 / Semester 4"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KEAMANAN AKUN"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:letterSpacing="0.1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLihatKtm"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LIHAT DOKUMEN KTM"
+                app:icon="@android:drawable/ic_menu_gallery"
+                android:layout_marginBottom="12dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChangePass"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GANTI PASSWORD"
+                app:icon="@android:drawable/ic_lock_idle_lock"
+                android:layout_marginBottom="40dp" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

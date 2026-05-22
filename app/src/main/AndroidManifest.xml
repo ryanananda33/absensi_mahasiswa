@@ -7,6 +7,13 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- MASTER LEVEL PERMISSIONS -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
     <uses-feature android:name="android.hardware.camera.any" />
 
     <application
@@ -20,21 +27,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Absensi_Mahasiswa">
 
-        <!-- LoginActivity sebagai halaman pertama (Launcher) -->
+        <!-- SplashActivity sebagai Entry Point -->
         <activity
-            android:name=".LoginActivity"
-            android:exported="true">
+            android:name=".ui.auth.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Absensi_Mahasiswa">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".MainActivity" android:exported="false" />
-        <activity android:name=".HistoryActivity" android:exported="false" />
+        <activity android:name=".ui.auth.LoginActivity" android:exported="false" />
+        <activity android:name=".ui.auth.RegisterActivity" android:exported="false" />
+        <activity android:name=".ui.dashboard.DashboardActivity" android:exported="false" />
+        <activity android:name=".ui.dashboard.ProfileActivity" android:exported="false" />
+        <activity android:name=".ui.absensi.AbsensiActivity" android:exported="false" />
+        <activity android:name=".ui.absensi.CameraActivity" android:exported="false" />
+        <activity android:name=".ui.riwayat.RiwayatActivity" android:exported="false" />
+        <activity android:name=".ui.riwayat.RekapActivity" android:exported="false" />
+        <activity android:name=".ui.riwayat.DetailAbsensiActivity" android:exported="false" />
 
-        <!-- RegisterActivity didaftarkan agar bisa dibuka dari halaman Login -->
-        <activity android:name=".RegisterActivity" android:exported="false" />
+        <!-- MASTER COMPONENTS: Receiver untuk Pengingat Absen -->
+        <receiver android:name=".helper.ReminderReceiver" android:exported="false" />
+        <receiver android:name=".helper.BootReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
 
         <provider
             android:name="androidx.core.content.FileProvider"

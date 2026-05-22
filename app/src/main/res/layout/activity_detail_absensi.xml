@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Absensi"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/ivDetailFoto"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:background="#DDD"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Bukti Foto" />
+
+    <TextView
+        android:id="@+id/tvDetailMatkul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Matakuliah"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDetailWaktu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waktu"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvDetailStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"/>
+
+</LinearLayout>

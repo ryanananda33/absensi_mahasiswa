@@ -1,4 +1,4 @@
-package com.pab.absensi_mahasiswa
+package com.pab.absensi_mahasiswa.model
 
 data class AbsenResponse(
     val status: String,

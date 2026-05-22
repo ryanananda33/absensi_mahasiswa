@@ -1,3 +1,106 @@
 <resources>
-    <string name="app_name">Absensi_Mahasiswa</string>
+    <string name="app_name">Absensi Mahasiswa</string>
+    <string name="university_name">FAKULTAS ILMU KOMPUTER</string>
+    <string name="reg_title">REGISTRASI AKADEMIK</string>
+    <string name="login_title">PORTAL AKADEMIK</string>
+    <string name="dashboard_welcome">Selamat Datang,</string>
+    <string name="history_title">Riwayat Absensi</string>
+    <string name="version_app">Versi 1.1.0 (Enterprise Edition)</string>
+
+    <!-- Form Labels -->
+    <string name="label_personal_data">Informasi Identitas</string>
+    <string name="label_academic_data">Informasi Akademik</string>
+    <string name="label_ktm_validation">Otentikasi Dokumen Identitas</string>
+    <string name="label_today_course">Mata Kuliah Hari Ini</string>
+    <string name="label_location_title">KOORDINAT GPS ANDA</string>
+
+    <!-- Hints -->
+    <string name="hint_nama">Nama Lengkap (Sesuai KTM/KRS)</string>
+    <string name="hint_nim">NIM (11 Digit)</string>
+    <string name="hint_jurusan">Pilih Program Studi</string>
+    <string name="hint_angkatan">Pilih Angkatan</string>
+    <string name="hint_kelas">Pilih Kode Kelas</string>
+    <string name="hint_semester">Pilih Semester Aktif</string>
+    <string name="hint_jalur">Pilih Jalur Perkuliahan</string>
+    <string name="hint_doc_type">Pilih Tipe Dokumen</string>
+    <string name="hint_tempat_lahir">Kota Kelahiran</string>
+    <string name="hint_tanggal_lahir">Tanggal Lahir</string>
+    <string name="hint_password">Password (Otomatis TTL)</string>
+    <string name="hint_gender">Jenis Kelamin</string>
+    <string name="label_male">Laki-laki</string>
+    <string name="label_female">Perempuan</string>
+
+    <string-array name="doc_type_array">
+        <item>KTM (Kartu Tanda Mahasiswa)</item>
+        <item>KRS (Kartu Rencana Studi)</item>
+        <item>Surat Keterangan Kampus</item>
+    </string-array>
+
+    <!-- Dropdown Jalur (Sesuai Permintaan Nabil) -->
+    <string-array name="jalur_array">
+        <item>Reguler (Pagi-Sore)</item>
+        <item>Karyawan (Malam)</item>
+        <item>Karyawan (Weekend/Sabtu)</item>
+    </string-array>
+
+    <string-array name="jurusan_array">
+        <item>Teknik Informatika</item>
+        <item>Sistem Informasi</item>
+        <item>Desain Komunikasi Visual</item>
+        <item>Teknik Sipil</item>
+    </string-array>
+
+    <string-array name="angkatan_array">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+
+    <string-array name="semester_array">
+        <item>Semester 1</item>
+        <item>Semester 2</item>
+        <item>Semester 3</item>
+        <item>Semester 4</item>
+        <item>Semester 5</item>
+        <item>Semester 6</item>
+        <item>Semester 7</item>
+        <item>Semester 8</item>
+    </string-array>
+
+    <!-- Buttons & Messages -->
+    <string name="btn_login">MASUK PORTAL</string>
+    <string name="btn_register">BUAT AKUN AKADEMIK</string>
+    <string name="btn_take_ktm">SCAN DOKUMEN ASLI</string>
+    <string name="btn_logout">Logout Sesi</string>
+    <string name="btn_take_photo">AMBIL SELFIE</string>
+    <string name="btn_send_absen">KONFIRMASI HADIR</string>
+    <string name="menu_absen">Absen Harian</string>
+    <string name="menu_riwayat">Riwayat Kuliah</string>
+    <string name="menu_rekap">Rekap Semester</string>
+    <string name="back_to_login">Kembali ke Login</string>
+    <string name="register_prompt">Belum punya akun? Daftar Sekarang</string>
+
+    <string name="msg_empty_nim_pass">NIM dan Password wajib diisi!</string>
+    <string name="msg_login_success">Selamat Datang, %s!</string>
+    <string name="msg_fill_all">Lengkapi seluruh formulir akademik!</string>
+    <string name="msg_reg_success">Pendaftaran Terkirim! Mohon tunggu verifikasi Admin.</string>
+    <string name="msg_conn_error">Gangguan Server: %s</string>
+    <string name="label_rekap_title">Rekapitulasi Absensi</string>
+    <string name="label_total_pertemuan">Total 16 Pertemuan</string>
+    <string name="msg_attendance_low">Peringatan: Kehadiran di bawah 75%!</string>
+    <string name="msg_attendance_safe">Status: Aman untuk mengikuti UAS.</string>
+    <string name="label_location_title">KOORDINAT GPS ANDA</string>
+    <string name="absen_form_title">Form Presensi</string>
+    <string name="detecting_location">Mendeteksi Lokasi…</string>
+    <string name="data_kehadiran_label">Data Kehadiran</string>
+    <string name="label_hadir">Hadir</string>
+    <string name="label_izin">Izin</string>
+    <string name="label_sakit">Sakit</string>
+    <string name="label_selfie">Bukti Foto Selfie</string>
+    <string name="msg_far_from_campus">Anda berada di luar radius kampus!</string>
+    <string name="msg_ktm_required">Foto KTM wajib diunggah untuk validasi mahasiswa!</string>
+    <string name="status_absen_label">Status Presensi Hari Ini</string>
+    <string name="status_belum_absen">Belum Absen</string>
+    <string name="hint_matkul">Pilih Mata Kuliah</string>
 </resources>
